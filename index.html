@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <title>Процессинг</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="header__top">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="./img/logo.png" alt="logo">
+            </a>
+            <a href="tel:84951278280" class="tel">
+                <span class="bg-icon">
+                <img src="./icons/icons.svg#phone" class="svg-phone-dims" alt="phone">
+                </span>
+                8 (495) 127-82-80
+            </a>
+            <button type="button" class="btn btn-primary mobNone">Напишите нам</button>
+            <a href="#" class="btn btn-primary">
+                <img src="./icons/icons.svg#user" class="svg-user-dims" alt="user">
+                Личный кабинет
+            </a>
+            <button type="button" class="hamburger">
+                <span class="hamburger__line top" ></span>
+                <span class="hamburger__line center" ></span>
+                <span class="hamburger__line bottom" ></span>
+            </button>
+        </div>
+    </div>
+    <nav class="header__menu">
+        <div class="container">
+            <ul class="menu">
+                <li class="menu__li">
+                    <a href="#" class="menu__link">Доставка топлива</a>
+                </li>
+                <li class="menu__li">
+                    <a href="#" class="menu__link">Топливные карты</a>
+                    <span class="arrow-btn">
+                        <img src="./icons/icons.svg#arrow" class="svg-arrow-dims" alt="arrow">
+                    </span>
+                    <ul class="menu-two">
+                        <li class="menu-two__li"><a href="#" class="menu-two__link">Страница 1</a></li>
+                        <li class="menu-two__li"><a href="#" class="menu-two__link">Страница 2</a></li>
+                        <li class="menu-two__li"><a href="#" class="menu-two__link">Страница 3</a></li>
+                        <li class="menu-two__li"><a href="#" class="menu-two__link">Страница 4</a></li>
+                    </ul>
+                </li>
+                <li class="menu__li">
+                    <a href="#" class="menu__link">АЗС</a>
+                    <span class="arrow-btn">
+                        <img src="./icons/icons.svg#arrow" class="svg-arrow-dims" alt="arrow">
+                    </span>
+                    <ul class="menu-two">
+                        <li class="menu-two__li"><a href="#" class="menu-two__link">Страница 1</a></li>
+                        <li class="menu-two__li"><a href="#" class="menu-two__link">Страница 2</a></li>
+                        <li class="menu-two__li"><a href="#" class="menu-two__link">Страница 3</a></li>
+                        <li class="menu-two__li"><a href="#" class="menu-two__link">Страница 4</a></li>
+                    </ul>
+                </li>
+                <li class="menu__li"><a href="#" class="menu__link">Цены на топливо</a></li>
+                <li class="menu__li">
+                    <a href="#" class="menu__link">О компании</a>
+                    <span class="arrow-btn">
+                        <img src="./icons/icons.svg#arrow" class="svg-arrow-dims" alt="arrow">
+                    </span>
+                    <ul class="menu-two">
+                        <li class="menu-two__li"><a href="#" class="menu-two__link">Страница 1</a></li>
+                        <li class="menu-two__li"><a href="#" class="menu-two__link">Страница 2</a></li>
+                        <li class="menu-two__li"><a href="#" class="menu-two__link">Страница 3</a></li>
+                        <li class="menu-two__li"><a href="#" class="menu-two__link">Страница 4</a></li>
+                    </ul>
+                </li>
+                <li class="menu__li"><a href="#" class="menu__link">Контакты</a></li>
+            </ul>
+        </div>
+        <button type="button" class="btn btn-primary">Напишите нам</button>
+    </nav>
+</header>
+
+<main>
+    <section class="quick-order-section mb-100">
+        <div class="container">
+            <h1>Доставка топлива</h1>
+            <form action="#" class="quick-order">
+                <h2>Быстрый <span>заказ топлива</span></h2>
+                <label class="form-label">
+                    <span class="form-label__title">Ваше имя</span>
+                    <input type="text" placeholder="Иван" class="form-control">
+                </label>
+                <label class="form-label">
+                    <span class="form-label__title">Номер телефона</span>
+                    <input type="text" placeholder="+7 (___) ___-__-__" class="form-control telephone">
+                </label>
+                <button type="submit" class="btn btn-primary">Заказать топливо</button>
+                <label class="form-check">
+                    <input type="checkbox" class="form-check-input" checked>
+                    <span class="form-check-text">
+                        <img src="./icons/icons.svg#check" class="svg-check-dims" alt="check">
+                        Я согласен с условиями обработки данных</span>
+                </label>
+            </form>
+        </div>
+    </section>
+
+    <section class="table-prise-section mb-100">
+        <div class="container">
+            <h2>Стоимость топлива</h2>
+
+            <div class="table-prise-scroll">
+                <table class="table-prise">
+                    <thead>
+                    <tr>
+                        <th>Сорт топлива</th>
+                        <th>Экологический класс</th>
+                        <th>Производитель</th>
+                        <th>Наличный расчет</th>
+                        <th>Безналичный расчет</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td rowspan="5" class="table-prise_text">ДТ</td>
+                        <td rowspan="3">ЕВРО-5</td>
+                        <td>Газпромнефть</td>
+                        <td>45.43 р.</td>
+                        <td>44.43 р.</td>
+                    </tr>
+                    <tr>
+                        <td>Лукойл</td>
+                        <td>45.16 р.</td>
+                        <td>43.98 р.</td>
+                    </tr>
+                    <tr>
+                        <td>Роснефть</td>
+                        <td>42.34 р.</td>
+                        <td>41.64 р.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">ЕВРО-4</td>
+                        <td>Газпромнефть</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Лукойл</td>
+                        <td>41.16 р.</td>
+                        <td>40.67 р.</td>
+                    </tr>
+                    </tbody>
+                    <tbody>
+                    <tr>
+                        <td rowspan="8" class="table-prise_text">АИ-95</td>
+                        <td rowspan="3">ЕВРО-5</td>
+                        <td>Газпромнефть</td>
+                        <td>45.43 р.</td>
+                        <td>44.43 р.</td>
+                    </tr>
+                    <tr>
+                        <td>Роснефть</td>
+                        <td>42.34 р.</td>
+                        <td>41.64 р.</td>
+                    </tr>
+                    <tr>
+                        <td>Лукойл</td>
+                        <td>45.16 р.</td>
+                        <td>43.98 р.</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">ЕВРО-4</td>
+                        <td>Лукойл</td>
+                        <td>45.16 р.</td>
+                        <td>43.98 р.</td>
+                    </tr>
+                    <tr>
+                        <td>Газпромнефть</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="3">ЕВРО-3</td>
+                        <td>Роснефть</td>
+                        <td>45.16 р.</td>
+                        <td>43.98 р.</td>
+                    </tr>
+                    <tr>
+                        <td>Газпромнефть</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Лукойл</td>
+                        <td>45.16 р.</td>
+                        <td>43.98 р.</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="fuel-delivery-section mb-100">
+        <div class="container">
+            <h2>Топливо с доставкой</h2>
+            <form action="#" class="fuel-delivery">
+                <div class="fuel-delivery__input">
+                    <label class="form-label">
+                        <span class="form-label__title">Вид топлива</span>
+                        <select name="" id="" class="form-control select">
+                            <option value="">ДТ</option>
+                            <option value="">ДТ1</option>
+                            <option value="">ДТ2</option>
+                            <option value="">ДТ3</option>
+                        </select>
+                    </label>
+                    <label class="form-label">
+                        <span class="form-label__title">Место доставки</span>
+                        <input type="text" placeholder="Укажите место" class="form-control">
+                    </label>
+
+                    <label class="form-label">
+                        <span class="form-label__title">Объем топлива</span>
+                        <input id="range-slider-value" type="text" value="1670 литров" placeholder="Укажите объем"
+                               class="form-control">
+                        <span class="range-slider"></span>
+                    </label>
+
+
+                    <label class="form-label">
+                        <span class="form-label__title">Ваше имя</span>
+                        <input type="text" placeholder="Иван" class="form-control">
+                    </label>
+                    <label class="form-label">
+                        <span class="form-label__title">Номер телефона</span>
+                        <input type="text" placeholder="+7 (___) ___-__-__" class="form-control telephone">
+                    </label>
+                </div>
+                <div class="fuel-delivery__total">
+                    <div class="fuel-delivery__total-title">Итого</div>
+                    <div class="inf">
+                        <div class="left">
+                            <div class="text">Стоимость топлива</div>
+                        </div>
+                        <div class="right">
+                            <div class="text">77 350.00 ₽</div>
+                        </div>
+                    </div>
+                    <div class="inf">
+                        <div class="left">
+                            <div class="text">Цена за литр:</div>
+                            <div class="desc">Цена и стоимость указаны ориентировочно.
+                                Точные цену и стоимость собщит наш менеджер при подтверждении заявки.
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="text">45.50 ₽</div>
+                        </div>
+                    </div>
+                    <div class="inf">
+                        <div class="left">
+                            <div class="text">Выгода:</div>
+                            <div class="desc">При цене на АЗС 49.59 ₽ за литр, цены актуальны на 23.11.2020 г.</div>
+                        </div>
+                        <div class="right">
+                            <div class="text-total">6 953.00 ₽</div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary">Заказать топливо</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="work-section">
+        <div class="container">
+            <h2>Как мы работаем</h2>
+            <div class="work-inf-wrap">
+                <article class="work-inf">
+                    <!--                    <a href="#" class="abs-link"></a>-->
+                    <div class="work-inf__head">
+                        <div class="work-inf__icon">
+                            <img width="64px" height="64px" src="./icons/icons.svg#click" class="svg-click-dims" alt="click">
+                        </div>
+                        <div class="right">
+                            <div class="work-inf_time">1-3 мин.</div>
+                            <img width="59px" height="14px" src="./icons/icons.svg#arrow-right"
+                                 class="svg-arrow-right-dims" alt="arrow-right">
+                        </div>
+                    </div>
+                    <h4>Оформление заявки</h4>
+                    <p class="desc">Заполните заявку на сайте, укажите удобное для вас место приезда заправщика, сорт и
+                        количество топлива, которое хотите купить</p>
+                </article>
+                <article class="work-inf">
+                    <!--                    <a href="#" class="abs-link"></a>-->
+                    <div class="work-inf__head">
+                        <div class="work-inf__icon">
+                            <img width="64px" height="64px" src="./icons/icons.svg#phone-big" class="svg-phone-big-dims"
+                                 alt="phone-big">
+                        </div>
+                        <div class="right">
+                            <div class="work-inf_time">1-3 мин.</div>
+                            <img width="59px" height="14px" src="./icons/icons.svg#arrow-right"
+                                 class="svg-arrow-right-dims" alt="arrow-right">
+                        </div>
+                    </div>
+                    <h4>Подтверждение заявки менеджером</h4>
+                    <p class="desc">Дождитесь звонка нашего менеджера для уточнения условий заказа</p>
+                </article>
+                <article class="work-inf">
+                    <!--                    <a href="#" class="abs-link"></a>-->
+                    <div class="work-inf__head">
+                        <div class="work-inf__icon">
+                            <img width="64px" height="64px" src="./icons/icons.svg#gas" class="svg-gas-dims" alt="gas">
+                        </div>
+                        <div class="right">
+                            <div class="work-inf_time">30-90 мин.</div>
+                        </div>
+                    </div>
+                    <h4>Заправка вашего автомобиля</h4>
+                    <p class="desc">В назначенное время приедет заправщик и заправит автомобиль топливом.</p>
+                    <p class="text">Если у заказчика есть действующий договор на топливные карты, то при оплате можно
+                        провести транзакцию через терминал. Переносное устройство есть у каждого заправщика</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages-section mb-100">
+        <div class="container">
+            <h2>Преимущества сервиса</h2>
+            <div class="advantages">
+                <article class="advantage">
+                    <div class="advantage__icon">
+                        <img width="48px" height="48px" src="./icons/icons.svg#certificate" class="svg-certificate-dims"
+                             alt="certificate">
+                    </div>
+                    <h6>Качество топлива</h6>
+                    <p class="advantage__desc">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu,
+                        purus ac nisi
+                        sit eget sed et, adipiscing felis.</p>
+                </article>
+                <article class="advantage">
+                    <div class="advantage__icon">
+                        <img width="48px" height="48px" src="./icons/icons.svg#clock" class="svg-clock-dims" alt="clock">
+                    </div>
+                    <h6>Бережем ваше время и нервы</h6>
+                    <p class="advantage__desc">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu,
+                        purus ac nisi sit eget sed et, adipiscing felis.</p>
+                </article>
+                <article class="advantage">
+                    <div class="advantage__icon">
+                        <img width="48px" height="48px" src="./icons/icons.svg#ruble" class="svg-ruble-dims" alt="ruble">
+                    </div>
+                    <h6>Цена</h6>
+                    <p class="advantage__desc">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu,
+                        purus ac nisi sit eget sed et, adipiscing felis.</p>
+                </article>
+                <article class="advantage">
+                    <div class="advantage__icon">
+                        <img width="48px" height="48px" src="./icons/icons.svg#place" class="svg-place-dims" alt="place">
+                    </div>
+                    <h6>Ваш комфорт—наша забота</h6>
+                    <p class="advantage__desc">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu,
+                        purus ac nisi sit eget sed et, adipiscing felis.</p>
+                </article>
+                <article class="advantage">
+                    <div class="advantage__icon">
+                        <img width="48px" height="48px" src="./icons/icons.svg#shield" class="svg-shield-dims" alt="shield">
+                    </div>
+                    <h6>Безопасность процесса</h6>
+                    <p class="advantage__desc">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu,
+                        purus ac nisi
+                        sit eget sed et, adipiscing felis.</p>
+                </article>
+                <article class="advantage">
+                    <div class="advantage__icon">
+                        <img width="48px" height="48px" src="./icons/icons.svg#way" class="svg-way-dims" alt="way">
+                    </div>
+                    <h6>Несколько ТС в одном месте?</h6>
+                    <p class="advantage__desc">Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu,
+                        purus ac nisi
+                        sit eget sed et, adipiscing felis.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="certificates-section mb-100">
+        <div class="container">
+            <div class="wrap-title">
+                <h2>Сертификаты качества топлива</h2>
+                <div class="arrow">
+                    <div class="certificates-swiper-button-prev">
+                        <img src="./icons/icons.svg#arrow" class="svg-arrow-dims" alt="arrow">
+                    </div>
+                    <div class="certificates-swiper-button-next">
+                        <img src="./icons/icons.svg#arrow" class="svg-arrow-dims" alt="arrow">
+                    </div>
+                </div>
+            </div>
+
+            <div class="certificates-swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="./img/certificates.jpg" style="display:block;" data-fancybox="certificates-img" >
+                            <img data-src="./img/certificates.jpg" class="swiper-lazy" alt=""/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./img/certificates1.jpg" style="display:block;" data-fancybox="certificates-img" >
+                            <img data-src="./img/certificates1.jpg" class="swiper-lazy" alt=""/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./img/certificates2.jpg" style="display:block;" data-fancybox="certificates-img" >
+                            <img data-src="./img/certificates2.jpg" class="swiper-lazy" alt=""/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./img/certificates3.jpg" style="display:block;" data-fancybox="certificates-img" >
+                            <img data-src="./img/certificates3.jpg" class="swiper-lazy" alt=""/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./img/certificates.jpg" style="display:block;" data-fancybox="certificates-img" >
+                            <img data-src="./img/certificates.jpg" class="swiper-lazy" alt=""/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./img/certificates1.jpg" style="display:block;" data-fancybox="certificates-img" >
+                            <img data-src="./img/certificates1.jpg" class="swiper-lazy" alt=""/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./img/certificates2.jpg" style="display:block;" data-fancybox="certificates-img" >
+                            <img data-src="./img/certificates2.jpg" class="swiper-lazy" alt=""/>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./img/certificates3.jpg" style="display:block;" data-fancybox="certificates-img" >
+                            <img data-src="./img/certificates3.jpg" class="swiper-lazy" alt=""/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners-section">
+        <div class="container">
+            <h2>Наши партнеры</h2>
+            <div class="partners-swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img data-src="./icons/icons.svg#partner1" class="svg-partner1-dims swiper-lazy" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="./icons/icons.svg#partner2" class="svg-partner2-dims swiper-lazy" alt="partner2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="./icons/icons.svg#partner3" class="svg-partner3-dims swiper-lazy" alt="partner3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="./icons/icons.svg#partner4" class="svg-partner4-dims swiper-lazy" alt="partner4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="./icons/icons.svg#partner1" class="svg-partner1-dims swiper-lazy" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="./icons/icons.svg#partner2" class="svg-partner2-dims swiper-lazy" alt="partner2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="./icons/icons.svg#partner3" class="svg-partner3-dims swiper-lazy" alt="partner3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="./icons/icons.svg#partner4" class="svg-partner4-dims swiper-lazy" alt="partner4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="./icons/icons.svg#partner1" class="svg-partner1-dims swiper-lazy" alt="partner1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="./icons/icons.svg#partner2" class="svg-partner2-dims swiper-lazy" alt="partner2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="./icons/icons.svg#partner3" class="svg-partner3-dims swiper-lazy" alt="partner3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img data-src="./icons/icons.svg#partner4" class="svg-partner4-dims swiper-lazy" alt="partner4">
+                    </div>
+                </div>
+                <div class="partners-swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comments-section">
+        <div class="container">
+            <div class="wrap-title">
+                <h2>Отзывы</h2>
+                <div class="arrow">
+                    <div class="comments-swiper-button-prev">
+                        <img src="./icons/icons.svg#arrow" class="svg-arrow-dims" alt="arrow">
+                    </div>
+                    <div class="comments-swiper-button-next">
+                        <img src="./icons/icons.svg#arrow" class="svg-arrow-dims" alt="arrow">
+                    </div>
+                </div>
+            </div>
+            <div class="comments-swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <article class="comment">
+                            <h6>Гусев Вячеслав</h6>
+                            <div class="status">Индивидуальный предприниматель</div>
+                            <p class="desc">Velit, lectus sit urna tincidunt augue. Cursus vulputate pellentesque
+                                faucibus
+                                euismod. Diam pharetra, non, ut integer dui feugiat porttitor at. Non, dignissim enim
+                                viverra fringilla sit. Etiam justo a dignissim sociis vitae, nisi, justo, feugiat.</p>
+                            <a href="#" class="link">Подробнее</a>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="comment">
+                            <h6>Зеленов Евгений</h6>
+                            <div class="status">Гененеральный директор трансопртной компании</div>
+                            <p class="desc">Mi auctor sit habitasse sed mi cras ullamcorper massa sed. In augue fames
+                                sodales pretium, at scelerisque. Pulvinar a mattis pharetra mi, aliquet sem tristique
+                                lorem eleifend. Nisl, scelerisque ut libero, pellentesque. Tincidunt vestibulum volutpat
+                                lacus imperdiet morbi vulputate tristique facilisi.</p>
+                            <a href="#" class="link">Подробнее</a>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="comment">
+                            <h6>Гусев Вячеслав</h6>
+                            <div class="status">Индивидуальный предприниматель</div>
+                            <p class="desc">Velit, lectus sit urna tincidunt augue. Cursus vulputate pellentesque
+                                faucibus
+                                euismod. Diam pharetra, non, ut integer dui feugiat porttitor at. Non, dignissim enim
+                                viverra fringilla sit. Etiam justo a dignissim sociis vitae, nisi, justo, feugiat.</p>
+                            <a href="#" class="link">Подробнее</a>
+                        </article>
+                    </div>
+                    <div class="swiper-slide">
+                        <article class="comment">
+                            <h6>Зеленов Евгений</h6>
+                            <div class="status">Гененеральный директор трансопртной компании</div>
+                            <p class="desc">Mi auctor sit habitasse sed mi cras ullamcorper massa sed. In augue fames
+                                sodales pretium, at scelerisque. Pulvinar a mattis pharetra mi, aliquet sem tristique
+                                lorem eleifend. Nisl, scelerisque ut libero, pellentesque. Tincidunt vestibulum volutpat
+                                lacus imperdiet morbi vulputate tristique facilisi.</p>
+                            <a href="#" class="link">Подробнее</a>
+                        </article>
+                    </div>
+                </div>
+                <div class="partners-swiper-pagination"></div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-primary">Читать все отзывы</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="question-section">
+        <div class="container">
+            <h2>Остались вопросы?</h2>
+            <div class="subtitle">Готовы ответить на любой Ваш вопрос. Оставьте свой номер имысвяжемся с вами в
+                ближайшее впемя
+            </div>
+            <form action="#" class="question-form">
+                <label class="form-label">
+                    <input type="text" placeholder="Иван" class="form-control">
+                </label>
+                <label class="form-label">
+                    <input type="text" placeholder="Номер телефона" class="form-control telephone">
+                </label>
+                <button type="submit" class="btn btn-primary">Перезвоните мне</button>
+            </form>
+            <div class="text-politic">Нажимая на кнопку "Перезвоните мне" я соглашаюсь с <a href="#" target="_blank">политикой
+                конфиденциальности</a></div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="col">
+                <a href="/" class="logo">
+                    <img src="./img/logo.png" alt="logo">
+                </a>
+                <div class="copyright">© 2019 ООО "Процессинг 24"</div>
+            </div>
+            <nav class="col">
+                <ul class="footer-menu">
+                    <li><a href="#" class="footer-menu__link">Карта АЗС</a></li>
+                    <li><a href="#" class="footer-menu__link">АЗС по регионам</a></li>
+                    <li><a href="#" class="footer-menu__link">АЗС по брендам</a></li>
+                    <li><a href="#" class="footer-menu__link">Доставка топлива</a></li>
+                    <li><a href="#" class="footer-menu__link">Контакты</a></li>
+                    <li><a href="#" class="footer-menu__link">О компании</a></li>
+                    <li><a href="#" class="footer-menu__link">Личный кабинет</a></li>
+                </ul>
+            </nav>
+            <div class="col">
+                <div class="sales-department">отдел продаж</div>
+                <a href="tel:84951278180" class="tel">8(495)127-81-80</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a href="#" target="_blank" class="politic-link">Политика конфиденциальности</a>
+    </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+        integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
